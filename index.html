@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<h1 class="heading">Новый гороскоп на 2021 год!</h1>
+			<p class="header_text">Узнайте, что Вас ждёт.</p>
+		</header>
+
+		<div class="main">
+
+			<div class="conteiner" id="conteiner">
+
+				<div class="content" id="content">
+						<img class="bg_content" src="./img/bg_img.jpg" alt="#">
+					<h2 class="content_heading">Узнайте, как 2021 год изменит жизнь каждого из нас!</h2>
+					<p class="content_text">К сожалению, 2020 год принес нам немало неприятностей, даже откровенных проблем и несчастий. Не смотря на это, 3 знака зодиака очень скоро обретут долгожданное счастье! 2021 год затронет своими потрясениями каждого из нас.</p>
+				</div>
+
+				<div class="loading" id="loading"></div>
+
+				<div class="quiz" id="quiz">
+
+					<div class="quiz-header" id="header">
+						<!-- Заголовок вопроса -->
+						<h2 class="title">Загружаем вопрос...</h2>
+			
+						<!-- Результаты викторины -->
+						<h2 class="title">%title%</h2>
+						<h3 class="summary">%message%</h3>
+						<p class="result">%result%</p>
+					</div>
+			
+					<ul class="quiz-list" id="list">
+						<li>
+							<label>
+								<input type="radio" class="answer" name="answer" />
+								<span>Ответ...</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" class="answer" name="answer" />
+								<span>Ответ...</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<button type="submit" class="quiz-submit submit" id="submit">Ответить</button>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<p class="footer_text">2020 © HOROSCOP PERSONAL</p>
+		</footer>
+	</div>
+	<script src="./main.js"></script>
+</body>
+</html>
